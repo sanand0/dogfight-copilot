@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogfight Copilot - 3D Flight Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="hud">
+        <div class="hud-element" id="speed-display">
+            <div class="hud-label">SPEED</div>
+            <div class="hud-value" id="speed-value">0</div>
+            <div class="hud-unit">km/h</div>
+        </div>
+        <div class="hud-element" id="altitude-display">
+            <div class="hud-label">ALTITUDE</div>
+            <div class="hud-value" id="altitude-value">0</div>
+            <div class="hud-unit">m</div>
+        </div>
+        <div id="controls-info">
+            <h3>CONTROLS</h3>
+            <p><strong>W/S or ↑/↓:</strong> Pitch</p>
+            <p><strong>A/D or ←/→:</strong> Roll</p>
+            <p><strong>Q/E:</strong> Yaw</p>
+            <p><strong>SPACE:</strong> Boost</p>
+        </div>
+    </div>
+    
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./node_modules/three/build/three.module.js",
+                "three/addons/": "./node_modules/three/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
