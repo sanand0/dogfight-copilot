@@ -1,0 +1,27 @@
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies (if we add npm later)
+node_modules/
+package-lock.json
+
+# Build artifacts
+dist/
+build/
