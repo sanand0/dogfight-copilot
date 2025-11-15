@@ -25,10 +25,12 @@ const keys = {
 
 // Scene setup
 const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x87CEEB); // Sky blue fallback
 scene.fog = new THREE.Fog(0x87CEEB, 500, 3000);
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 5000);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setClearColor(0x87CEEB); // Set clear color to sky blue
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
